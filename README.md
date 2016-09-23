@@ -11,7 +11,7 @@ folder
 │   │   │   │   │   file.txt
 ```
 
-Should end up turning into something looking like using a respectful unful:
+Should end up turning into something looking like using a respectful unfurl:
 
 ```
 folder
@@ -44,7 +44,5 @@ pip install docopt==0.6.2
     * *EG: unfurl asdf*
 
 ## Errors
-Why does:
-`Destination path 'C:\Users\user\folder\asdf' already exists`
-Occur when there is no file/folder with the same name?
+Why does `Destination path 'C:\Users\user\folder\asdf' already exists` occur when there is no file/folder with the same name?
 >Python does not see a difference between files and folders; therefore - it is impossible to move a file to a directory where a folder has the same name.
