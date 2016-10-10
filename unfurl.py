@@ -25,7 +25,7 @@ if arguments["<folder>"]:
     start = path.join(start, arguments["<folder>"]) 
 for (dirpath, dirname, filename) in walk(start):
     if filename and start != dirpath:
-        if arguments["-r"] or arguments["--respect"]:
+        if arguments["--respect"]:
             filename += dirname
         for file in filename:
             try:
@@ -33,5 +33,5 @@ for (dirpath, dirname, filename) in walk(start):
             except Exception as e:
                 print(e)
                 pass
-        if arguments["-r"] or arguments["--respect"]:
+        if arguments["--respect"]:
             break
